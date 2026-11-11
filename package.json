@@ -1,0 +1,23 @@
+{
+  "name": "omp-codebuddy-provider",
+  "version": "0.1.0",
+  "description": "Use CodeBuddy models directly as an Oh My Pi provider",
+  "type": "module",
+  "files": ["index.ts", "README.md"],
+  "keywords": ["omp", "omp-package", "codebuddy", "provider"],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@oh-my-pi/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@oh-my-pi/pi-coding-agent": "*",
+    "@types/bun": "latest",
+    "typescript": "latest"
+  },
+  "omp": {
+    "extensions": ["./index.ts"]
+  }
+}
